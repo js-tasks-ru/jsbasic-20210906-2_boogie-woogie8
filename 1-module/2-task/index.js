@@ -12,16 +12,13 @@ function print(text) {
 function isValid(name) {
   // ваш код...
   if (name) {
-    if (
-      name === "" ||
-      name.length < 4 ||
-      name.indexOf(" ") !== -1 ||
-      name === null
-    ) {
-      return false;
-    } else {
-      return true;
-    }
+    return (
+      name &&
+      name !== "" &&
+      name.length >= 4 &&
+      name !== null &&
+      name.indexOf(" ") === -1
+    );
   } else {
     return false;
   }
