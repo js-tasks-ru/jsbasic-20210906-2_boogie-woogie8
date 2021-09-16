@@ -8,12 +8,3 @@ function sumSalary(salaries) {
   }
   return result;
 }
-
-let menu = {
-  width: 200,
-  height: 300,
-  title: "My menu",
-};
-
-sumSalary(menu);
-console.log(sumSalary(menu));
