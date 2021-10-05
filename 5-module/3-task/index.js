@@ -10,7 +10,7 @@ function initCarousel() {
 
   buttonRight.addEventListener("click", function () {
     buttonLeft.style.display = "block";
-    carousel.style.transform = "translateX(-" + slideWidth + "px";
+    carousel.style.transform = `translateX(-${slideWidth}px`;
     slideWidth += currentWidth;
 
     if (slideWidth === currentWidth * 4) {
@@ -24,7 +24,7 @@ function initCarousel() {
     slideWidth -= currentWidth;
 
     if (slideWidth <= currentWidth * 3 || slideWidth >= 0) {
-      carousel.style.transform = "translateX(-" + slideWidth + "px";
+      carousel.style.transform = `translateX(-${slideWidth}px`;
     }
 
     if (slideWidth === 0) {
